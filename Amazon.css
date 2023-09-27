@@ -5,16 +5,22 @@
 
 body{
     font-family: "Amazon Ember",Arial,sans-serif;
+    background: rgb(238, 241, 243)
 }
 
 .navbar-main{
     background: #0F1111;
-    height: 7vh;
+    height: 80px;
+    width: 100%;
+    position: fixed;
 }
 
 .nav-main{
     display: flex;
     color: white;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
 }
 
 .nav-top-left{
@@ -27,15 +33,17 @@ body{
     color: rgb(255, 255, 255);
     margin-right:0;
     font-size: 12px;
+    max-height: 15px;
+    padding-bottom: 35px;
 }
 
 .deliver-text{
     padding-left: 4px;
+    font-weight: bold;
 }
 
 .deliver-to{
     color: rgba(255, 255, 255, 0.596);
-    padding-bottom: 2px;
 }
 
 .nav-logo{
@@ -43,7 +51,7 @@ body{
 }
 
 .amazon-logo{
-    height: 37px;
+    height: 35px;
 }
 
 .location-pin{
@@ -52,11 +60,13 @@ body{
 }
 
 .location{
-    padding-right: 15px;
+    padding-right: 5%;
+    width: 270px;
 }
 
 .search-bar{
     display: flex;
+    width: 60%;
 }
 .search-icon{
     height: 20px;
@@ -65,7 +75,7 @@ body{
 }
 
 .search-input{
-    width: 950px;
+    width: 100%;
     height: 40px;
     outline: 0;
     border: 0;
@@ -75,13 +85,14 @@ body{
 
 .filterBtn{
     height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
     border: 0;
     outline: 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     color: rgba(0, 0, 0, 0.582);
+    
 }
 
 .searchBtn{
@@ -104,7 +115,9 @@ body{
     display: flex;
     justify-content: space-evenly;
     font-size: 12px;
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .language{
@@ -115,12 +128,27 @@ body{
     height: 18px;
 }
 
+.hello{
+    max-height: 15px;
+    min-width: 70px;
+}
+
+.lists{
+    width: 110px;
+    min-width: 110px
+}
+
 .lists, .orders{
     font-weight: bold;
 }
 
+.orders{
+    width: 56px;
+}
+
 .cart, .account, .returns-orders, .language{
     padding-left: 50px;
+    padding-top: 10px;
 }
 
 .cart-icon{
@@ -129,6 +157,7 @@ body{
 
 .cart{
     font-size: 14px;
+    width: 93px;
 }
 
 .cart-amount{
@@ -140,7 +169,10 @@ body{
     display: flex;
     background: #232f3e;
     color: white;
-    height: 35px;
+    height: 35px; 
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 .second-navbar-left{
@@ -156,7 +188,8 @@ body{
 }
 
 .middle{
-    padding: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 13px;
     font-weight: bold;
 }
@@ -191,36 +224,74 @@ body{
 }
 
 .medical{
-    padding: 10px;
+    padding-left: 8px;;
 }
 
 .body-section1{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 31px;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+ 
+}
+
+.background-image{
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 720px;
 }
 
 
-
 .body-image{
-    width: 100%;
-    
-
+    height: 100%;
+    width: auto;
+    padding-top:95px;
 }
 
 .body-cards{
     height: 20vh;
     display: flex;
     margin-top: -21.5rem;
-    background: white
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    
 }
 
-.card1, .card2, .card3{
+.card1, .card2, .card3, .card4{
     padding: 16px;
     padding-bottom: 30px;
     height:54vh;
-    width: 36vh;
+    width: 350px;
     background: white;
+
+}
+
+.card2 img{
+    width: 120px;
+}
+
+
+
+.card4{
+    height: 20vh;
+    background: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.sign-inBtn{
+    background: rgb(255, 217, 0);
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
+
+}
+
+.sign-inBtn-div{
+    width: 100%;
 }
 
 .card1 h3, .card2 h3, .card3 h3{
@@ -235,6 +306,10 @@ body{
 .card1 img{
     height: 32vh;
     width: 32vh;
+}
+
+.card2 img{
+    width: 160px;
 }
 
 .card3 img{
